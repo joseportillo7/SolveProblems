@@ -23,10 +23,19 @@ const MyFunction3 = (a) =>{
     return typeof(a)
 }
 
+/**
+ * Write a function that takes a string (a) an a number (n) as argument
+ * Return de nth character of string
+ */
+const MyFunction4 = (a,n)=>{
+    return a[n-1]
+}
+
 module.exports.jsBasics = {
     MyFunction1,
     MyFunction2,
-    MyFunction3
+    MyFunction3,
+    MyFunction4
 }
     
     

@@ -42,3 +42,16 @@ describe("JavaScript Basics - Problem #3 - Get type of value", ()=>{
     })
 })
 
+describe("JavaScript Basics - Problem #4 - Get nth character of string", ()=>{
+    test("The result should be a",()=> {
+        const expected = 'a'
+        const result = jsbasic.jsBasics.MyFunction4('abcde',1)
+        expect(expected).toBe(result)
+    })
+    test("The result should be o",()=> {
+        const expected = 'o'
+        const result = jsbasic.jsBasics.MyFunction4('Ejemplo',7)
+        expect(expected).toBe(result)
+    })
+})
+
