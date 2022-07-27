@@ -119,3 +119,16 @@ describe("JavaScriptBasics - Problem #9 - Remove last n character of string", ()
         expect(expected).toBe(result)
     })
 })
+
+describe("JavaScriptBasics - Problem #10 - Return the percentage of a number", () =>{
+    test("The result should be 50", () =>{
+        const expected = 50
+        const result = jsbasic.jsBasics.MyFunction10(100,50)
+        expect(expected).toBe(result)
+    })
+    test("The result should be 0.1", () =>{
+        const expected = 0.1
+        const result = jsbasic.jsBasics.MyFunction10(10,1)
+        expect(expected).toBe(result)
+    })
+})

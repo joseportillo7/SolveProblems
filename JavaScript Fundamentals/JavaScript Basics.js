@@ -81,6 +81,14 @@ const MyFunction9 = (a) =>{
 }
 
 
+/**
+ * Write a function that takes two values a and b as argument
+ * Return  b percent of a
+ */
+const MyFunction10 = (a,b) => {
+    return a * b/100
+}
+
 module.exports.jsBasics = {
     MyFunction1,
     MyFunction2,
@@ -90,7 +98,8 @@ module.exports.jsBasics = {
     MyFunction6,
     MyFunction7,
     MyFunction8,
-    MyFunction9
+    MyFunction9,
+    MyFunction10
 }
     
     
