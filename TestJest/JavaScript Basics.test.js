@@ -14,3 +14,17 @@ describe("JavaScript Basics - Problem #1 - Sum two numbers", () =>{
     })
 })
 
+describe("JavaScript Basics - Problem #2 - Comparation operators, strict equality", () =>{
+    test("The result should be false", () =>{
+        const expected = false
+        const result = jsbasic.jsBasics.MyFunction2(2,'2')
+        expect(expected).toBe(result)
+    })
+
+    test("The result should be true", () =>{
+        const expected = true
+        const result = jsbasic.jsBasics.MyFunction2(3,3)
+        expect(expected).toBe(result)
+    })
+})
+
