@@ -31,11 +31,22 @@ const MyFunction4 = (a,n)=>{
     return a[n-1]
 }
 
+
+/**
+ * Write a function that takes a string as argument
+ * remove the first 3 characters of string
+ * Return the result
+ */
+const MyFunction5 = (a)=>{
+    return a.slice(3)
+}
+
 module.exports.jsBasics = {
     MyFunction1,
     MyFunction2,
     MyFunction3,
-    MyFunction4
+    MyFunction4,
+    MyFunction5
 }
     
     

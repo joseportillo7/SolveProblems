@@ -55,3 +55,16 @@ describe("JavaScript Basics - Problem #4 - Get nth character of string", ()=>{
     })
 })
 
+describe("JavaScriptBasics - Problem #5 - Remove firts n characters of string", ()=> {
+    test("The result shoud be 456",()=>{
+        const expected = '456'
+        const result = jsbasic.jsBasics.MyFunction5('123456')
+        expect(expected).toBe(result)
+    })
+    test("The result shoud be def",()=>{
+        const expected = 'def'
+        const result = jsbasic.jsBasics.MyFunction5('abcdef')
+        expect(expected).toBe(result)
+    })
+})
+
