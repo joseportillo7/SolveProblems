@@ -61,6 +61,15 @@ const MyFunction7 = (a) =>{
 }
 
 
+/**
+ * Write a function that takes a string (a) as argument
+ * Extract the first half a
+ * Return the result
+ */
+const MyFunction8 = (a) =>{
+    return a.slice(0, a.length/2)
+}
+
 module.exports.jsBasics = {
     MyFunction1,
     MyFunction2,
@@ -68,7 +77,8 @@ module.exports.jsBasics = {
     MyFunction4,
     MyFunction5,
     MyFunction6,
-    MyFunction7
+    MyFunction7,
+    MyFunction8
 }
     
     
