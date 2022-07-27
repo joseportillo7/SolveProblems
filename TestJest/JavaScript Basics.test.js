@@ -28,3 +28,17 @@ describe("JavaScript Basics - Problem #2 - Comparation operators, strict equalit
     })
 })
 
+describe("JavaScript Basics - Problem #3 - Get type of value", ()=>{
+    test("The result should be boolean", () =>{
+        const expected = 'boolean'
+        const result = jsbasic.jsBasics.MyFunction3(false)
+        expect(expected).toBe(result)
+    })
+
+    test("The result should be string", () =>{
+        const expected = 'string'
+        const result = jsbasic.jsBasics.MyFunction3('Cadena ejemplo')
+        expect(expected).toBe(result)
+    })
+})
+

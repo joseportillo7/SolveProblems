@@ -15,9 +15,18 @@ const MyFunction2 = (a,b)=>{
     return a === b
 }
 
+/**
+ * Write a function that takes a value as argument
+ * Return de type of the value
+ */
+const MyFunction3 = (a) =>{
+    return typeof(a)
+}
+
 module.exports.jsBasics = {
     MyFunction1,
-    MyFunction2
+    MyFunction2,
+    MyFunction3
 }
     
     
