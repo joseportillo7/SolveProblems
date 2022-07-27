@@ -41,12 +41,25 @@ const MyFunction5 = (a)=>{
     return a.slice(3)
 }
 
+/**
+ * Write a function that takes a string as argument
+ * Extract the last 3 characters from the string
+ * Return the result
+ */
+const MyFunction6 = (a) =>{
+    return a.slice(-3)
+}
+
+
+
+
 module.exports.jsBasics = {
     MyFunction1,
     MyFunction2,
     MyFunction3,
     MyFunction4,
-    MyFunction5
+    MyFunction5,
+    MyFunction6
 }
     
     
