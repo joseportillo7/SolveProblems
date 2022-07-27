@@ -70,6 +70,17 @@ const MyFunction8 = (a) =>{
     return a.slice(0, a.length/2)
 }
 
+
+/**
+ * Write a function that takes a string (a) as argument
+ * Remove the las 3 characters of string
+ * Return the result
+ */
+const MyFunction9 = (a) =>{
+    return a.slice(0, -3)
+}
+
+
 module.exports.jsBasics = {
     MyFunction1,
     MyFunction2,
@@ -78,7 +89,8 @@ module.exports.jsBasics = {
     MyFunction5,
     MyFunction6,
     MyFunction7,
-    MyFunction8
+    MyFunction8,
+    MyFunction9
 }
     
     

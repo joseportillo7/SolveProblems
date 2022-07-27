@@ -107,3 +107,15 @@ describe("JavaScriptBasics - Problem #8 - Extract first half of string", () =>{
     })
 })
 
+describe("JavaScriptBasics - Problem #9 - Remove last n character of string", ()=>{
+    test("The result should be 12",()=>{
+        const expected = '12'
+        const result = jsbasic.jsBasics.MyFunction9('12345')
+        expect(expected).toBe(result)
+    })
+    test("The result should be abc",()=>{
+        const expected = 'abc'
+        const result = jsbasic.jsBasics.MyFunction9('abcdef')
+        expect(expected).toBe(result)
+    })
+})
