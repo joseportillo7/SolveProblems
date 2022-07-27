@@ -81,3 +81,16 @@ describe("JavaScriptBasics - Problem #6 - Get last n characters of string",()=>{
     })
 })
 
+describe("JavaScriptBasics - Problem #7 - Get first n characters of string", () =>{
+    test("The result shoud be abc", () => {
+        const expected = 'abc'
+        const result = jsbasic.jsBasics.MyFunction7('abcdefgh')
+        expect(expected).toBe(result)
+    })
+    test("The result shoud be 123", () => {
+        const expected = '123'
+        const result = jsbasic.jsBasics.MyFunction7('12345678')
+        expect(expected).toBe(result)
+    })
+})
+

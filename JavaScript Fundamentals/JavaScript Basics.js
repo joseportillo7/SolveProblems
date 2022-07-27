@@ -51,6 +51,14 @@ const MyFunction6 = (a) =>{
 }
 
 
+/**
+ * Write a function that takes a string as argument
+ * Get the first 3 character of a 
+ * Return the result
+ */
+const MyFunction7 = (a) =>{
+    return a.slice(0,3)
+}
 
 
 module.exports.jsBasics = {
@@ -59,7 +67,8 @@ module.exports.jsBasics = {
     MyFunction3,
     MyFunction4,
     MyFunction5,
-    MyFunction6
+    MyFunction6,
+    MyFunction7
 }
     
     
