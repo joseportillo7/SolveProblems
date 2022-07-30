@@ -89,6 +89,20 @@ const MyFunction10 = (a,b) => {
     return a * b/100
 }
 
+
+/**
+ * Write a function that takes 6 values (a,b,c,d,e,f) as argument
+ * sum a and b 
+ * Then substract by c
+ * Then multiply by d and divide by e
+ * Finally raise to the power of f and return the result
+ * Tipp: mind the order
+ */
+const MyFunction11 = (a,b,c,d,e,f) => {
+    return Math.pow((d*((a+b)-c)/e),f)
+}
+
+
 module.exports.jsBasics = {
     MyFunction1,
     MyFunction2,
@@ -99,7 +113,8 @@ module.exports.jsBasics = {
     MyFunction7,
     MyFunction8,
     MyFunction9,
-    MyFunction10
+    MyFunction10,
+    MyFunction11
 }
     
     

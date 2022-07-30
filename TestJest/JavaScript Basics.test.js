@@ -132,3 +132,17 @@ describe("JavaScriptBasics - Problem #10 - Return the percentage of a number", (
         expect(expected).toBe(result)
     })
 })
+
+describe("JavaScriptBasics - Problem #11 - Basic JavaScript math operators", () => {
+    test("The result should be 10.5",()=>{
+        const expected = 10.5
+        const result = jsbasic.jsBasics.MyFunction11(6,5,4,3,2,1)
+        expect(expected).toBe(result)
+    })
+
+    test("The result should be -8",()=>{
+        const expected = -8
+        const result = jsbasic.jsBasics.MyFunction11(2,3,6,4,2,3)
+        expect(expected).toBe(result)
+    })
+})
