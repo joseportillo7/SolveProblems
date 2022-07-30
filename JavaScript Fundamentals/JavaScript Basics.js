@@ -103,6 +103,17 @@ const MyFunction11 = (a,b,c,d,e,f) => {
 }
 
 
+/**
+ * Write a function that takes two string (a and b) as arguments
+ * If a contains b, append b to the beginning of a
+ * If not, append it to the end
+ * Return the concatenation
+ */
+const MyFunction12 = (a,b) =>{    
+    return a.includes(b) ? b.concat(a) : a.concat(b)
+}
+
+
 module.exports.jsBasics = {
     MyFunction1,
     MyFunction2,
@@ -114,7 +125,8 @@ module.exports.jsBasics = {
     MyFunction8,
     MyFunction9,
     MyFunction10,
-    MyFunction11
+    MyFunction11,
+    MyFunction12
 }
     
     

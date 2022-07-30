@@ -146,3 +146,16 @@ describe("JavaScriptBasics - Problem #11 - Basic JavaScript math operators", () 
         expect(expected).toBe(result)
     })
 })
+
+describe("JavaScriptBasics - Problem #12 - Check whether a string contains another string and concatenate",() => {
+    test("The result should be JosePortillo",()=>{
+        const expected = 'JosePortillo'
+        const result = jsbasic.jsBasics.MyFunction12('Jose','Portillo')
+        expect(expected).toBe(result)
+    })
+    test("The result should be slips",()=>{
+        const expected = 'slips'
+        const result = jsbasic.jsBasics.MyFunction12('lips','s')
+        expect(expected).toBe(result)
+    })
+})
