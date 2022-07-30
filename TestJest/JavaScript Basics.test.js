@@ -159,3 +159,16 @@ describe("JavaScriptBasics - Problem #12 - Check whether a string contains anoth
         expect(expected).toBe(result)
     })
 })
+
+describe("JavaScriptBasics - Problem #13 - Check is a number is even",() =>{
+    test("The result should be true",()=>{
+        const expected = true
+        const result = jsbasic.jsBasics.MyFunction13(10)
+        expect(expected).toBe(result)
+    })
+    test("The result should be false",()=>{
+        const expected = false
+        const result = jsbasic.jsBasics.MyFunction13(101)
+        expect(expected).toBe(result)
+    })
+})

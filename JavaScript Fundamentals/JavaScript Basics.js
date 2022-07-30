@@ -114,6 +114,17 @@ const MyFunction12 = (a,b) =>{
 }
 
 
+/**
+ * Write a function that takes a number as argument
+ * If the number is even, return true
+ * Otherwise, return false
+ */
+const MyFunction13 = (a) =>{
+    return a % 2 ==0 ? true : false
+}
+
+
+
 module.exports.jsBasics = {
     MyFunction1,
     MyFunction2,
@@ -126,7 +137,8 @@ module.exports.jsBasics = {
     MyFunction9,
     MyFunction10,
     MyFunction11,
-    MyFunction12
+    MyFunction12,
+    MyFunction13
 }
     
     
