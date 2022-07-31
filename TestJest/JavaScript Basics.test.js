@@ -224,3 +224,16 @@ describe("JavaScriptBasics - Problem #17 - Round a number to 2 decimal places",(
         expect(expected).toBe(result)
     })    
 })
+
+describe("JavaScriptBasics - Problem #18 - Split a number into its digits",()=>{
+    test("The result should be [1,2,3]",()=>{
+        const expected = [1, 2, 3]
+        const result = jsbasic.jsBasics.MyFunction18(123)
+        expect(expected).toEqual(result)
+    })
+    test("The result should be [1,2,4,5,6,7,8]",()=>{
+        const expected = [1,2,4,5,6,7,8]
+        const result = jsbasic.jsBasics.MyFunction18(1245678)
+        expect(expected).toEqual(result)
+    })    
+})

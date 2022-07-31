@@ -168,6 +168,17 @@ const MyFunction17 = (a) =>{
 
 
 
+/**
+ * Write a function that takes a number (a) as argument
+ * Split a into its individual digits and return them in an array
+ * Tipp> you might want to change the type of the number for splitting
+ */
+const MyFunction18 = (a) =>{
+    console.log(typeof(a.toString().split('')));
+    return a.toString().split('').map(item => Number(...item))    
+}
+
+
 module.exports.jsBasics = {
     MyFunction1,
     MyFunction2,
@@ -185,5 +196,6 @@ module.exports.jsBasics = {
     MyFunction14,
     MyFunction15,
     MyFunction16,
-    MyFunction17
+    MyFunction17,
+    MyFunction18
 }
