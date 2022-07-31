@@ -160,7 +160,7 @@ describe("JavaScriptBasics - Problem #12 - Check whether a string contains anoth
     })
 })
 
-describe("JavaScriptBasics - Problem #13 - Check is a number is even",() =>{
+describe("JavaScriptBasics - Problem #13 - Check if a number is even",() =>{
     test("The result should be true",()=>{
         const expected = true
         const result = jsbasic.jsBasics.MyFunction13(10)
@@ -169,6 +169,19 @@ describe("JavaScriptBasics - Problem #13 - Check is a number is even",() =>{
     test("The result should be false",()=>{
         const expected = false
         const result = jsbasic.jsBasics.MyFunction13(101)
+        expect(expected).toBe(result)
+    })
+})
+
+describe("JavaScriptBasics - Problem #14 - How many times does a character occur",()=>{
+    test("The result should be 3",()=>{
+        const expected = 3
+        const result = jsbasic.jsBasics.MyFunction14('H','Hello, Hi, How are you')
+        expect(expected).toBe(result)
+    })
+    test("The result should be 0",()=>{
+        const expected = 0
+        const result = jsbasic.jsBasics.MyFunction14('z','Hello, Hi, How are you')
         expect(expected).toBe(result)
     })
 })

@@ -124,6 +124,14 @@ const MyFunction13 = (a) =>{
 }
 
 
+/**
+ * Write a function that takes two string (a and b) as argument
+ * Return the number of times a occurs in b
+ */
+const MyFunction14 = (a,b)=>{
+    return b.split(a).length-1
+}
+
 
 module.exports.jsBasics = {
     MyFunction1,
@@ -138,7 +146,6 @@ module.exports.jsBasics = {
     MyFunction10,
     MyFunction11,
     MyFunction12,
-    MyFunction13
+    MyFunction13,
+    MyFunction14
 }
-    
-    
