@@ -198,3 +198,16 @@ describe("JavaScriptBasics - Problem #15 - Check if a number is a whole number",
         expect(expected).toBe(result)
     })    
 })
+
+describe("JavaScriptBasics - Problem #16 - Multiplication, division, and comparasion operators",()=>{
+    test("The result should be 0.1",()=>{
+        const expected = 0.1
+        const result = jsbasic.jsBasics.MyFunction16(10,100)
+        expect(expected).toBe(result)
+    })
+    test("The result should be 1",()=>{
+        const expected = 1
+        const result = jsbasic.jsBasics.MyFunction16(2,0.5)
+        expect(expected).toBe(result)
+    })    
+})

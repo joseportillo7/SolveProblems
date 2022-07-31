@@ -132,6 +132,7 @@ const MyFunction14 = (a,b)=>{
     return b.split(a).length-1
 }
 
+
 /**
  * Write a function that takes a number (a) as argument
  * If a is a whole number (has no decimal place), return true
@@ -140,6 +141,20 @@ const MyFunction14 = (a,b)=>{
 const MyFunction15 = (a)=>{
     return a % 1 == 0 ? true : false
 }
+
+
+
+/**
+ * Write a function that takes two numbers (a and b) as argument 
+ * If a is smaller than b, divide a by b
+ * Otherwise, multiply both numbers
+ * Return the resulting value
+ */
+const MyFunction16 = (a,b) =>{
+    return a < b ? a/b : a*b
+}
+
+
 
 module.exports.jsBasics = {
     MyFunction1,
@@ -156,5 +171,6 @@ module.exports.jsBasics = {
     MyFunction12,
     MyFunction13,
     MyFunction14,
-    MyFunction15
+    MyFunction15,
+    MyFunction16
 }
