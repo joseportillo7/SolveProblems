@@ -185,3 +185,16 @@ describe("JavaScriptBasics - Problem #14 - How many times does a character occur
         expect(expected).toBe(result)
     })
 })
+
+describe("JavaScriptBasics - Problem #15 - Check if a number is a whole number",()=>{
+    test("The result should be true",()=>{
+        const expected = true
+        const result = jsbasic.jsBasics.MyFunction15(10)
+        expect(expected).toBe(result)
+    })
+    test("The result should be false",()=>{
+        const expected = false
+        const result = jsbasic.jsBasics.MyFunction15(10.5)
+        expect(expected).toBe(result)
+    })    
+})

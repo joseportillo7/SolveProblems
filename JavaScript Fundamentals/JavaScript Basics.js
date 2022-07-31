@@ -132,6 +132,14 @@ const MyFunction14 = (a,b)=>{
     return b.split(a).length-1
 }
 
+/**
+ * Write a function that takes a number (a) as argument
+ * If a is a whole number (has no decimal place), return true
+ * Otherwise, return false
+ */
+const MyFunction15 = (a)=>{
+    return a % 1 == 0 ? true : false
+}
 
 module.exports.jsBasics = {
     MyFunction1,
@@ -147,5 +155,6 @@ module.exports.jsBasics = {
     MyFunction11,
     MyFunction12,
     MyFunction13,
-    MyFunction14
+    MyFunction14,
+    MyFunction15
 }
