@@ -211,3 +211,16 @@ describe("JavaScriptBasics - Problem #16 - Multiplication, division, and compara
         expect(expected).toBe(result)
     })    
 })
+
+describe("JavaScriptBasics - Problem #17 - Round a number to 2 decimal places",()=>{
+    test("The result should be 3.14",()=>{
+        const expected = 3.13
+        const result = jsbasic.jsBasics.MyFunction17(3.1316)
+        expect(expected).toBe(result)
+    })
+    test("The result should be 25.14",()=>{
+        const expected = 25.14
+        const result = jsbasic.jsBasics.MyFunction17(25.13678)
+        expect(expected).toBe(result)
+    })    
+})

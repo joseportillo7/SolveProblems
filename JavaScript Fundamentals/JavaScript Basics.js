@@ -156,6 +156,18 @@ const MyFunction16 = (a,b) =>{
 
 
 
+/**
+ * Write a function that takes a number (a) as argument
+ * Round a to the 2nd digit after the comma
+ * Return the rounded number
+ */
+const MyFunction17 = (a) =>{
+    //return Math.round((a + Number.EPSILON) * 100) / 100
+    return Number(a.toFixed(2))
+}
+
+
+
 module.exports.jsBasics = {
     MyFunction1,
     MyFunction2,
@@ -172,5 +184,6 @@ module.exports.jsBasics = {
     MyFunction13,
     MyFunction14,
     MyFunction15,
-    MyFunction16
+    MyFunction16,
+    MyFunction17
 }
