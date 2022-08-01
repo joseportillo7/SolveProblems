@@ -190,6 +190,23 @@ const MyFunction19 = (a,b)=>{
 }
 
 
+/**
+ * Write a function that takes a number as argument
+ * If a is prime, return a
+ * If not, return the next higher prime number
+ */
+const MyFunction20 = (a) => {
+    let isprime = x => {
+        if (x<=1) return false;
+        for (var i = 2; i <= x-1; i++)
+            if (x % i == 0) return false;
+        return true;
+    }
+    while(!isprime(a)) isprime(a++)
+    if(isprime(a)) return a
+}
+
+
 module.exports.jsBasics = {
     MyFunction1,
     MyFunction2,
@@ -209,5 +226,6 @@ module.exports.jsBasics = {
     MyFunction16,
     MyFunction17,
     MyFunction18,
-    MyFunction19
+    MyFunction19,
+    MyFunction20
 }

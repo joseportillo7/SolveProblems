@@ -250,3 +250,16 @@ describe("JavaScriptBasics - Problem #19 - Clear up the chaos behind these strin
         expect(expected).toBe(result)
     })
 })
+
+describe("JavaScriptBasics - Problem #20 - Return the next higher prime number",()=>{
+    test('The result should be 41',()=>{
+        const expected = 41
+        const result = jsbasic.jsBasics.MyFunction20(38)
+        expect(expected).toBe(result)
+    })
+    test('The result should be 2',()=>{
+        const expected = 2
+        const result = jsbasic.jsBasics.MyFunction20(-3)
+        expect(expected).toBe(result)
+    })
+})
