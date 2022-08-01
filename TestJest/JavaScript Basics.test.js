@@ -263,3 +263,17 @@ describe("JavaScriptBasics - Problem #20 - Return the next higher prime number",
         expect(expected).toBe(result)
     })
 })
+
+describe("JavaScriptBasics - Problem #21 - Find next higher natural number that is divisible by y",()=>{
+    test("The result should be 23",()=>{
+        const expected = 23
+        const result = jsbasic.jsBasics.MyFunction21(1,23)
+        expect(expected).toBe(result)
+    })
+    test("The result should be 0",()=>{
+        const expected = 0
+        const result = jsbasic.jsBasics.MyFunction21(-5,7)
+        expect(expected).toBe(result)
+    })
+})
+

@@ -207,6 +207,30 @@ const MyFunction20 = (a) => {
 }
 
 
+/**
+ * Write a function that takes two numbers, say x and y, as argument
+ * Check if x is divisible by y 
+ * If yes return x
+ * if not return the next higher natural number that is divisile by y
+ */
+const MyFunction21 = (x,y) =>{
+
+    /**Primer solucioin */
+    // let isdivisible = (a,b) => {
+    //     if(a<0) return false
+    //     if(a % b == 0) return true
+    //     return false
+    // }
+
+    // while(!isdivisible(x,y)) isdivisible(x++,y)
+    // if(isdivisible(x,y)) return x
+
+    /**Segunda solucion */
+    while(x % y !==0) x++
+    return x
+}
+
+
 module.exports.jsBasics = {
     MyFunction1,
     MyFunction2,
@@ -227,5 +251,6 @@ module.exports.jsBasics = {
     MyFunction17,
     MyFunction18,
     MyFunction19,
-    MyFunction20
+    MyFunction20,
+    MyFunction21
 }
