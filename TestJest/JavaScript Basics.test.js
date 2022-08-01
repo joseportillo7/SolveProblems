@@ -237,3 +237,16 @@ describe("JavaScriptBasics - Problem #18 - Split a number into its digits",()=>{
         expect(expected).toEqual(result)
     })    
 })
+
+describe("JavaScriptBasics - Problem #19 - Clear up the chaos behind these strings",()=>{
+    test("The result should be Javascript",()=>{
+        const expected = 'Javascript'
+        const result = jsbasic.jsBasics.MyFunction19('java','tpi%rcs')
+        expect(expected).toBe(result)
+    })
+    test("The result should be Joseportillo",()=>{
+        const expected = 'Joseportillo'
+        const result = jsbasic.jsBasics.MyFunction19('jos%e','oll%itrop')
+        expect(expected).toBe(result)
+    })
+})

@@ -174,8 +174,19 @@ const MyFunction17 = (a) =>{
  * Tipp> you might want to change the type of the number for splitting
  */
 const MyFunction18 = (a) =>{
-    console.log(typeof(a.toString().split('')));
-    return a.toString().split('').map(item => Number(...item))    
+    return a.toString().split('').map(item => Number(item))    
+}
+
+
+/**
+ * It seems like something happened to these strings
+ * Can you figure out how to clear the chaos?
+ * Write a function that joins these strings together such that they form the the following words:
+ * 'Javascript', 'JosePortillo'
+ * You migth want to apply basic JS string methods such as replace(), split(), slice(), etc.
+ */
+const MyFunction19 = (a,b)=>{    
+    return a.replace(a.charAt(0),a.charAt(0).toUpperCase()).replace('%','') + b.replace('%','').split('').reverse().join('')
 }
 
 
@@ -197,5 +208,6 @@ module.exports.jsBasics = {
     MyFunction15,
     MyFunction16,
     MyFunction17,
-    MyFunction18
+    MyFunction18,
+    MyFunction19
 }
