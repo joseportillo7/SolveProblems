@@ -277,3 +277,16 @@ describe("JavaScriptBasics - Problem #21 - Find next higher natural number that 
     })
 })
 
+describe("JavaScriptBasics - Problem #22 - Insert character after every n characters (backwards)",()=>{
+    test("The result should be 1.234.567",()=>{
+        const expected = '1.234.567'
+        const result = jsbasic.jsBasics.MyFunction22('1234567','.')
+        expect(expected).toBe(result)
+    })
+    test("The result should be ab$cd",()=>{
+        const expected = 'ab$cde'
+        const result = jsbasic.jsBasics.MyFunction22('abcde','$')
+        expect(expected).toBe(result)
+    })
+})
+

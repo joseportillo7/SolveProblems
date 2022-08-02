@@ -231,6 +231,38 @@ const MyFunction21 = (x,y) =>{
 }
 
 
+/**
+ * Write a function that takes two string as arguments
+ * Beginnig at the end of 'a' insert 'b' after every 3rd character of 'a'
+ * return the resulting string
+ */
+const MyFunction22 = (a,b) =>{
+    
+    let array = a.split('')
+    let size = array.length
+
+    while(size % 3 !==0) size--
+    let aux = size === 3 ? 1 : size/3
+    
+    let cont = 1
+    let start = -3
+    while(aux>=1){
+        if(cont === 1){
+            array.splice(start,0,b)
+            cont++
+        }else{
+            start = -4
+            array.splice(start*cont+1,0,b)        
+            cont++
+        }
+        aux--
+    }
+
+    return array.join('')
+}
+
+
+
 module.exports.jsBasics = {
     MyFunction1,
     MyFunction2,
@@ -252,5 +284,6 @@ module.exports.jsBasics = {
     MyFunction18,
     MyFunction19,
     MyFunction20,
-    MyFunction21
+    MyFunction21,
+    MyFunction22
 }
