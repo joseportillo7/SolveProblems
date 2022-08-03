@@ -290,3 +290,16 @@ describe("JavaScriptBasics - Problem #22 - Insert character after every n charac
     })
 })
 
+describe("JavaScriptBasics - Problem #23 - Find the correct word by incrementing letters in alphabet",()=>{
+    test("The result should be coding",()=>{
+        const expected = 'coding'
+        const result = jsbasic.jsBasics.MyFunction23('bnchmf')
+        expect(expected).toBe(result)
+    })
+    test("The result should be cheese",()=>{
+        const expected = 'cheese'
+        const result = jsbasic.jsBasics.MyFunction23('bgddrd')
+        expect(expected).toBe(result)
+    })
+})
+

@@ -262,6 +262,16 @@ const MyFunction22 = (a,b) =>{
 }
 
 
+/**
+ * Write a function that takes a string as argument 
+ * As is it, the string has no meaning
+ * Increment each letter to the next letter in the alphabet
+ * Return the correct word
+ */
+const MyFunction23 = (a)=>{
+    return a.split('').map(item => item.charCodeAt(0)+1).map(item2 => String.fromCharCode(item2)).join('')    
+}
+
 
 module.exports.jsBasics = {
     MyFunction1,
@@ -285,5 +295,6 @@ module.exports.jsBasics = {
     MyFunction19,
     MyFunction20,
     MyFunction21,
-    MyFunction22
+    MyFunction22,
+    MyFunction23
 }
