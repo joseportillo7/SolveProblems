@@ -37,9 +37,20 @@ const MyFunction4 = (a) =>{
 }
 
 
+/**
+ * Write a function that takes an array and an number as argument
+ * It should return the last n elements of array
+ */
+const MyFunction5 = (array, n) =>{
+    return array.slice(-n)
+}
+
+
+
 module.exports.jsArray = {
     MyFunction1,
     MyFunction2,
     MyFunction3,
-    MyFunction4
+    MyFunction4,
+    MyFunction5
 }

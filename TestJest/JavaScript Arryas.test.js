@@ -51,3 +51,16 @@ describe('JavaScriptArrays - Problem #27 - Get first n elements of an array',()=
         expect(expected).toEqual(result)
     })
 })
+
+describe('JavaScriptArrays - Problem #28 - Return last n array elements',()=>{
+    test('The result should be [1,2,4]',()=>{
+        const expected = [1,2,4]
+        const result = jsarray.jsArray.MyFunction5([8,7,6,5,1,2,4],3)
+        expect(expected).toEqual(result)
+    })
+    test('The result should be [a,b,c]',()=>{
+        const expected = ['a','b','c']
+        const result = jsarray.jsArray.MyFunction5(['a','b','c'],7)
+        expect(expected).toEqual(result)
+    })
+})
