@@ -27,9 +27,19 @@ const MyFunction3 = (a) =>{
 }
 
 
+/**
+ * Write a function that takes an array as arguement
+ * Extract the first 3 characters of array 
+ * return the result
+ */
+const MyFunction4 = (a) =>{
+    return a.slice(0,3)
+}
+
 
 module.exports.jsArray = {
     MyFunction1,
     MyFunction2,
-    MyFunction3
+    MyFunction3,
+    MyFunction4
 }
