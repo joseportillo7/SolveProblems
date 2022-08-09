@@ -64,3 +64,17 @@ describe('JavaScriptArrays - Problem #28 - Return last n array elements',()=>{
         expect(expected).toEqual(result)
     })
 })
+
+describe('JavaScriptArrays - Problem #29 - Remove a especific array element',()=>{
+    test('The result should be [1,2]',()=>{
+        const expected = [1,2]
+        const result = jsarray.jsArray.MyFunction6([1,2,'2'],'2')
+        expect(expected).toEqual(result)
+    })
+    test('The result should be ["2",1]',()=>{
+        const expected = ['2',1]
+        const result = jsarray.jsArray.MyFunction6([false,'2',1],false)
+        expect(expected).toEqual(result)
+    })
+})
+

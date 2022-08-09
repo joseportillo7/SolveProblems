@@ -46,11 +46,22 @@ const MyFunction5 = (array, n) =>{
 }
 
 
+/**
+ * Write a function that takes an array and a value as argument
+ * The function should remove all elements equel to 'b' from the array
+ * return the filtered array
+ */
+const MyFunction6 = (array,b) =>{
+    return array.filter(item => item !== b)
+}
+
+
 
 module.exports.jsArray = {
     MyFunction1,
     MyFunction2,
     MyFunction3,
     MyFunction4,
-    MyFunction5
+    MyFunction5,
+    MyFunction6
 }
