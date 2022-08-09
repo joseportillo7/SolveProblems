@@ -25,3 +25,16 @@ describe('JavaScriptArrays - Problem #25 - Remove first n element of an array',(
         expect(expected).toEqual(result)
     })
 })
+
+describe('JavaScriptArrays - Problem #26 - Get Last n elements of an array',()=>{
+    test('The result should be [2,3,4]',()=>{
+        const expected = [2,3,4]
+        const result = jsarray.jsArray.MyFunction3([1,2,3,4])
+        expect(expected).toEqual(result)
+    })
+    test('The result should be [d,e,f]',()=>{
+        const expected = ['d','e','f']
+        const result = jsarray.jsArray.MyFunction3(['a','b','c','d','e','f'])
+        expect(expected).toEqual(result)
+    })
+})

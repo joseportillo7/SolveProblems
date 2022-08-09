@@ -17,9 +17,19 @@ const MyFunction2 = (a)=>{
 }
 
 
+/**
+ * Write a function that takes an array as argument
+ * extract the last 3 elements of array
+ * return the result 
+ */
+const MyFunction3 = (a) =>{
+    return a.slice(-3)
+}
+
 
 
 module.exports.jsArray = {
     MyFunction1,
-    MyFunction2
+    MyFunction2,
+    MyFunction3
 }
