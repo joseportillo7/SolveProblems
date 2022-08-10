@@ -90,3 +90,16 @@ describe('JavaScriptArrays - Problem #30 - Count number of elements in JavaScrip
         expect(expected).toEqual(result)
     })
 })
+
+describe('JavaScriptArrays - Problem #31 - Count number of negative values in array',()=>{
+    test('The result should be 3',()=>{
+        const expected = 3
+        const result = jsarray.jsArray.MyFunction8([1,-2,-100,-5])
+        expect(expected).toEqual(result)
+    })
+    test('The result should be 0',()=>{
+        const expected = 0
+        const result = jsarray.jsArray.MyFunction8([1000,9000])
+        expect(expected).toEqual(result)
+    })
+})

@@ -64,6 +64,14 @@ const MyFunction7 = (array) =>{
 }
 
 
+/**
+ * write a function that takes an array as argument
+ * return the number of negative values in the array
+ */
+const MyFunction8 = (array) =>{
+    return array.filter(item => item < 0).length
+}
+
 module.exports.jsArray = {
     MyFunction1,
     MyFunction2,
@@ -71,5 +79,6 @@ module.exports.jsArray = {
     MyFunction4,
     MyFunction5,
     MyFunction6,
-    MyFunction7
+    MyFunction7,
+    MyFunction8
 }
