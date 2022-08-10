@@ -129,3 +129,16 @@ describe('JavaScriptArrays - Problem #33 - Sort an array of numbers in decending
         expect(expected).toEqual(result)
     })
 })
+
+describe('JavaScriptArrays - Problem #34 - Calculate the sum of an array of numbers',()=>{
+    test('The result should be 50',()=>{
+        const expected = 50
+        const result = jsarray.jsArray.MyFunction11([10,5,15,10,10])
+        expect(expected).toBe(result)
+    })
+    test('The result should be -3',()=>{
+        const expected = -3
+        const result = jsarray.jsArray.MyFunction11([-20,10,7])
+        expect(expected).toBe(result)
+    })
+})

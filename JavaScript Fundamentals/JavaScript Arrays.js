@@ -91,6 +91,15 @@ const MyFunction10 =(array) =>{
 }
 
 
+/**
+ * Write a function that takes an array as argument
+ * return the sum of the numbers of the array
+ */
+const MyFunction11 = (array) =>{
+    return array.reduce((a,b) => a + b)
+}
+
+
 module.exports.jsArray = {
     MyFunction1,
     MyFunction2,
@@ -101,5 +110,6 @@ module.exports.jsArray = {
     MyFunction7,
     MyFunction8,
     MyFunction9,
-    MyFunction10
+    MyFunction10,
+    MyFunction11
 }
