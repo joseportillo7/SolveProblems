@@ -78,3 +78,15 @@ describe('JavaScriptArrays - Problem #29 - Remove a especific array element',()=
     })
 })
 
+describe('JavaScriptArrays - Problem #30 - Count number of elements in JavaScript array',()=>{
+    test('The result should be 4',()=>{
+        const expected = 4
+        const result = jsarray.jsArray.MyFunction7([1,2,'2',5])
+        expect(expected).toEqual(result)
+    })
+    test('The result should be 2',()=>{
+        const expected = 2
+        const result = jsarray.jsArray.MyFunction7([true,'hola'])
+        expect(expected).toEqual(result)
+    })
+})

@@ -55,6 +55,13 @@ const MyFunction6 = (array,b) =>{
     return array.filter(item => item !== b)
 }
 
+/**
+ * Write a function that takes an array as argument
+ * return the number of elements in array
+ */
+const MyFunction7 = (array) =>{
+    return array.length
+}
 
 
 module.exports.jsArray = {
@@ -63,5 +70,6 @@ module.exports.jsArray = {
     MyFunction3,
     MyFunction4,
     MyFunction5,
-    MyFunction6
+    MyFunction6,
+    MyFunction7
 }
