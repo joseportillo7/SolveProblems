@@ -103,3 +103,16 @@ describe('JavaScriptArrays - Problem #31 - Count number of negative values in ar
         expect(expected).toEqual(result)
     })
 })
+
+describe('JavaScriptArrays - Problem #32 - Sort an array of string alphabetically',()=>{
+    test('The result should be [j,k,l,m]',()=>{
+        const expected = ['j','k','l','m']
+        const result = jsarray.jsArray.MyFunction9(['m','j','k','l'])
+        expect(expected).toEqual(result)
+    })
+    test('The result should be [a,b,c,z]',()=>{
+        const expected = ['a','b','c','z']
+        const result = jsarray.jsArray.MyFunction9(['z','b','a','c'])
+        expect(expected).toEqual(result)
+    })
+})

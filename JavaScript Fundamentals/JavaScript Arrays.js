@@ -72,6 +72,16 @@ const MyFunction8 = (array) =>{
     return array.filter(item => item < 0).length
 }
 
+
+/**
+ * Write a function that takes an array as argument
+ * sort the array alphabetically
+ */
+const MyFunction9 = (array) =>{
+    return array.sort()
+}
+
+
 module.exports.jsArray = {
     MyFunction1,
     MyFunction2,
@@ -80,5 +90,6 @@ module.exports.jsArray = {
     MyFunction5,
     MyFunction6,
     MyFunction7,
-    MyFunction8
+    MyFunction8,
+    MyFunction9
 }
