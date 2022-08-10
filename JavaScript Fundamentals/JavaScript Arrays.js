@@ -100,6 +100,15 @@ const MyFunction11 = (array) =>{
 }
 
 
+
+/**
+ * Write a function that takes an array as argument
+ * return the average of the numbers
+ */
+const MyFunction12 = (array) =>{
+    return array.reduce((a,b) => (a+b)) / array.length
+}
+
 module.exports.jsArray = {
     MyFunction1,
     MyFunction2,
@@ -111,5 +120,6 @@ module.exports.jsArray = {
     MyFunction8,
     MyFunction9,
     MyFunction10,
-    MyFunction11
+    MyFunction11,
+    MyFunction12
 }

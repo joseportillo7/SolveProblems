@@ -142,3 +142,16 @@ describe('JavaScriptArrays - Problem #34 - Calculate the sum of an array of numb
         expect(expected).toBe(result)
     })
 })
+
+describe('JavaScriptArrays - Problem #35 - Return the average of an array of numbers',()=>{
+    test('The result should be 50',()=>{
+        const expected = 50
+        const result = jsarray.jsArray.MyFunction12([10,100,40])
+        expect(expected).toBe(result)
+    })
+    test('The result should be 370',()=>{
+        const expected = 370
+        const result = jsarray.jsArray.MyFunction12([10,100,1000])
+        expect(expected).toBe(result)
+    })
+})
