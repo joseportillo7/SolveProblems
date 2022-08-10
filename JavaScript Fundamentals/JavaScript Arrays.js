@@ -82,6 +82,15 @@ const MyFunction9 = (array) =>{
 }
 
 
+/**
+ * Write a function that takes an array as argument
+ * sort the array in descending order
+ */
+const MyFunction10 =(array) =>{
+    return array.sort().reverse()
+}
+
+
 module.exports.jsArray = {
     MyFunction1,
     MyFunction2,
@@ -91,5 +100,6 @@ module.exports.jsArray = {
     MyFunction6,
     MyFunction7,
     MyFunction8,
-    MyFunction9
+    MyFunction9,
+    MyFunction10
 }

@@ -116,3 +116,16 @@ describe('JavaScriptArrays - Problem #32 - Sort an array of string alphabeticall
         expect(expected).toEqual(result)
     })
 })
+
+describe('JavaScriptArrays - Problem #33 - Sort an array of numbers in decending order',()=>{
+    test('The result should be [5,4,3,2,1]',()=>{
+        const expected = [5,4,3,2,1]
+        const result = jsarray.jsArray.MyFunction10([4,1,5,2,3])
+        expect(expected).toEqual(result)
+    })
+    test('The result should be [5,40,20,1]',()=>{
+        const expected = [5,40,20,1]
+        const result = jsarray.jsArray.MyFunction10([20,5,1,40])
+        expect(expected).toEqual(result)
+    })
+})
