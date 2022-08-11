@@ -155,3 +155,16 @@ describe('JavaScriptArrays - Problem #35 - Return the average of an array of num
         expect(expected).toBe(result)
     })
 })
+
+describe('JavaScriptArrays - Problem #36 - Return the longest string from an array of strings',()=>{
+    test('The result should be javascript',()=>{
+        const expected = 'javascript'
+        const result = jsarray.jsArray.MyFunction13(['java','javascript','c++','mongoDB'])
+        expect(expected).toBe(result)
+    })
+    test('The result should be february',()=>{
+        const expected = 'february'
+        const result = jsarray.jsArray.MyFunction13(['june','july','february','august'])
+        expect(expected).toBe(result)
+    })
+})

@@ -100,7 +100,6 @@ const MyFunction11 = (array) =>{
 }
 
 
-
 /**
  * Write a function that takes an array as argument
  * return the average of the numbers
@@ -108,6 +107,16 @@ const MyFunction11 = (array) =>{
 const MyFunction12 = (array) =>{
     return array.reduce((a,b) => (a+b)) / array.length
 }
+
+
+/**
+ * Wirite a function that takes an array of strings as argument
+ * return the longest string
+ */
+const MyFunction13 = (array) =>{
+    return array.reduce((a,b) => a.length > b.length ? a : b)
+}
+
 
 module.exports.jsArray = {
     MyFunction1,
@@ -121,5 +130,6 @@ module.exports.jsArray = {
     MyFunction9,
     MyFunction10,
     MyFunction11,
-    MyFunction12
+    MyFunction12,
+    MyFunction13
 }
