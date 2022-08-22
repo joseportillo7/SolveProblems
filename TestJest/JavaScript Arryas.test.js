@@ -168,3 +168,16 @@ describe('JavaScriptArrays - Problem #36 - Return the longest string from an arr
         expect(expected).toBe(result)
     })
 })
+
+describe('JavaScriptArrays - Problem #37 - Check if all array elements are equal',()=>{
+    test('The result should be true',()=>{
+        const expected = true
+        const result = jsarray.jsArray.MyFunction14([2,2,2,2,2,2])
+        expect(expected).toEqual(result)
+    })
+    test('The result should be false',()=>{
+        const expected = false
+        const result = jsarray.jsArray.MyFunction14([2,2,2,2,'2',2])
+        expect(expected).toEqual(result)
+    })
+})

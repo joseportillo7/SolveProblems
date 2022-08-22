@@ -118,6 +118,18 @@ const MyFunction13 = (array) =>{
 }
 
 
+/**
+ * Write a function that takes an array as argument
+ * It should return true if all elements in the array are equal
+ * It should return false otherwise 
+ */
+const MyFunction14 = (array) =>{
+    
+    return array.every(a => a === array[0])
+}
+
+console.log(MyFunction14([1,1,1,1]));
+
 module.exports.jsArray = {
     MyFunction1,
     MyFunction2,
@@ -131,5 +143,6 @@ module.exports.jsArray = {
     MyFunction10,
     MyFunction11,
     MyFunction12,
-    MyFunction13
+    MyFunction13,
+    MyFunction14
 }
