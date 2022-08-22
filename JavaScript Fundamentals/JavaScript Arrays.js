@@ -128,7 +128,15 @@ const MyFunction14 = (array) =>{
     return array.every(a => a === array[0])
 }
 
-console.log(MyFunction14([1,1,1,1]));
+
+/**
+ * Write a function that takes arguments an arbitrary number of arrays
+ * It should return an array containning the values of all arrays
+ */
+const MyFunction15 = (...array) =>{
+    return array.flat()
+}
+
 
 module.exports.jsArray = {
     MyFunction1,
@@ -144,5 +152,6 @@ module.exports.jsArray = {
     MyFunction11,
     MyFunction12,
     MyFunction13,
-    MyFunction14
+    MyFunction14,
+    MyFunction15
 }

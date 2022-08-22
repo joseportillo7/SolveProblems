@@ -181,3 +181,16 @@ describe('JavaScriptArrays - Problem #37 - Check if all array elements are equal
         expect(expected).toEqual(result)
     })
 })
+
+describe('JavaScriptArrays - Problem #38 - Merge an arbitrary number of arrays',()=>{
+    test('The result should be [1,2,3,"a","b","c"]',()=>{
+        const expected = [1,2,3,'a','b','c']
+        const result = jsarray.jsArray.MyFunction15([1,2,3],['a','b','c'])
+        expect(expected).toEqual(result)
+    })
+    test('The result should be [false,1,2,3,true]',()=>{
+        const expected = [false,1,2,3,true]
+        const result = jsarray.jsArray.MyFunction15([false],[1,2,3],[true])
+        expect(expected).toEqual(result)
+    })
+})
