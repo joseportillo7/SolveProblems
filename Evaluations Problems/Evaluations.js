@@ -45,6 +45,39 @@ const functionSequence = (string) => {
     return findEnd(array)
 }
 
+
+/****************************************************************************************************************/
+
+const functionStrings = (a,b) =>{
+    
+    let array = b.split('')
+    let inicio = 0
+    let fin = a.length
+    let cont = 0
+
+    let newarray = []
+    while(array.length != 0){
+        newarray.push(array.splice(inicio,fin))
+    }
+
+    if(b.length < a.length) return 0
+
+    newarray.map((value) => {
+        let resul = value.join('')
+        let resul2 = value.reverse().join('')
+        
+        if(resul === a){
+            cont++
+        }else if(resul2 === a){
+            cont++
+        }
+    })
+    return cont
+}
+
+console.log(functionStrings('ab','abababbababacab'));
+
 module.exports.evaluation = {
-    functionSequence
+    functionSequence,
+    functionStrings
 }
