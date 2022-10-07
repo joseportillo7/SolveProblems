@@ -7,7 +7,7 @@ const findEnd =(array)=>{
     let positionOfLastCharacter = -1
     let index = -1
     let final = true
-    
+
     final = array.some((x) => {
         index++
         let resul = end.some((char) => char === x)
@@ -37,10 +37,10 @@ const findEnd =(array)=>{
 }
 
 const functionSequence = (string) => {
-    
+
     let array = string.split('') //['(','{','}',')']
     let findFirst = end.find(f => f === array[0])
-    
+
     if(findFirst) return false
     return findEnd(array)
 }
@@ -49,7 +49,7 @@ const functionSequence = (string) => {
 /****************************************************************************************************************/
 
 const functionStrings = (a,b) =>{
-    
+
     let array = b.split('')
     let inicio = 0
     let fin = a.length
@@ -65,7 +65,7 @@ const functionStrings = (a,b) =>{
     newarray.map((value) => {
         let resul = value.join('')
         let resul2 = value.reverse().join('')
-        
+
         if(resul === a){
             cont++
         }else if(resul2 === a){
@@ -74,8 +74,6 @@ const functionStrings = (a,b) =>{
     })
     return cont
 }
-
-console.log(functionStrings('ab','abababbababacab'));
 
 module.exports.evaluation = {
     functionSequence,

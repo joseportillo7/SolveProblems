@@ -1,4 +1,5 @@
 const problems = require('../Evaluations Problems/Evaluations')
+const problems2 = require('../Evaluations Problems/Stack')
 
 describe('Problem #1 - Solving string sequence',()=>{
     test('The result shoud be, true',()=>{
@@ -6,22 +7,32 @@ describe('Problem #1 - Solving string sequence',()=>{
         const result = problems.evaluation.functionSequence('{}[]()')
         expect(expected).toBe(result)
     })
-
     test('The result shoud be, true',()=>{
         const expected = true
         const result = problems.evaluation.functionSequence('({[]})')
         expect(expected).toBe(result)
     })
-
     test('The result shoud be, false',()=>{
         const expected = false
         const result = problems.evaluation.functionSequence('])[]()')
         expect(expected).toBe(result)
     })
-
     test('The result shoud be, false',()=>{
         const expected = false
         const result = problems.evaluation.functionSequence('(((((((((((((((((()))))))))))))))))]')
+        expect(expected).toBe(result)
+    })
+})
+
+describe('Problem #1.1, Solving string sequence with a Stack',()=>{
+    test('The result of the stack shoud be, false',()=>{
+        const expected = false
+        const result = problems2.stack.characterSequence('[](){}{}([{()}])}')
+        expect(expected).toBe(result)
+    })
+    test('The result of the stack should be true',()=>{
+        const expected = true
+        const result = problems2.stack.characterSequence('[](){}{}([{()}])')
         expect(expected).toBe(result)
     })
 })
