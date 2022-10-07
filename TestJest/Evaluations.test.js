@@ -35,6 +35,15 @@ describe('Problem #1.1, Solving string sequence with a Stack',()=>{
         const result = problems2.stack.characterSequence('[](){}{}([{()}])')
         expect(expected).toBe(result)
     })
+    test('The result of the stack should be false',()=>{
+        const expected = false
+        const result = problems2.stack.characterSequence('}}}')
+        expect(expected).toBe(result)
+    })
+    test('The result of the stack should be true',()=>{
+        const expected = true
+        const result = problems2.stack.characterSequence('({[{([({([({})])})])}]})')
+    })
 })
 
 describe('Problem #2 - Calculate how many strings equal to a can be constructed using only letters from b',()=>{
