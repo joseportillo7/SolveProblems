@@ -22,8 +22,6 @@ class Stack{
 
 const pila = new Stack()
 
-const characters = ['()','[]','{}']
-
 const characterSequence = (cadena) =>{
     let splitters = cadena.split('')
     
@@ -36,12 +34,8 @@ const characterSequence = (cadena) =>{
             let lasthchar = pila.pop()
             let join = lasthchar + element
         
-            bandera = characters.some(e => {
-                if(e === join) return true
-                else return false
-            })
-        }
-        
+            if(!('(){}[]'.includes(join))) bandera = false;
+        }  
     });
 
     if(pila.size() > 0){
@@ -49,8 +43,6 @@ const characterSequence = (cadena) =>{
     }
     return bandera
  }
-
-console.log(characterSequence('[](){}{}([{()}])'));
 
 module.exports.stack = {
     characterSequence

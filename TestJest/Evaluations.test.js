@@ -37,7 +37,7 @@ describe('Problem #1.1, Solving string sequence with a Stack',()=>{
     })
     test('The result of the stack should be false',()=>{
         const expected = false
-        const result = problems2.stack.characterSequence('}}}')
+        const result = problems2.stack.characterSequence('({[{([({([({)(})])})])}]}){}')
         expect(expected).toBe(result)
     })
     test('The result of the stack should be true',()=>{
