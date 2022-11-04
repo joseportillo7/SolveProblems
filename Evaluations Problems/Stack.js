@@ -20,7 +20,7 @@ class Stack{
     }
 }
 
-const pila = new Stack()
+const pila = [] // new Stack()
 
 const characterSequence = (cadena) =>{
     let splitters = cadena.split('')
@@ -38,7 +38,8 @@ const characterSequence = (cadena) =>{
         }  
     });
 
-    if(pila.size() > 0){
+    //pila.size()
+    if(pila.length > 0){
         bandera = false
     }
     return bandera
