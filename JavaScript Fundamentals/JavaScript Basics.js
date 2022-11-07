@@ -273,6 +273,16 @@ const MyFunction23 = (a)=>{
 }
 
 
+/** 
+ * Write a function that takes a string as argument.
+ * The string contains the substring 'is'
+ * return the index of 'is'
+*/
+const MyFunction24 = (str) =>{
+    return str.indexOf('is')
+}
+
+
 module.exports.jsBasics = {
     MyFunction1,
     MyFunction2,
@@ -296,5 +306,6 @@ module.exports.jsBasics = {
     MyFunction20,
     MyFunction21,
     MyFunction22,
-    MyFunction23
+    MyFunction23,
+    MyFunction24
 }

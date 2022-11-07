@@ -303,3 +303,15 @@ describe("JavaScriptBasics - Problem #23 - Find the correct word by incrementing
     })
 })
 
+describe("JavaScriptBasics - Problem #24 - Find the position of one string in another ",()=>{
+    test("The result should be 3",()=>{
+        const expected = 3
+        const result = jsbasic.jsBasics.MyFunction24('praise')
+        expect(expected).toBe(result)
+    })
+    test("The result should be 1",()=>{
+        const expected = 1
+        const result = jsbasic.jsBasics.MyFunction24('risky')
+        expect(expected).toBe(result)
+    })
+})
