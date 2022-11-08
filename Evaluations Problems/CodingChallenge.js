@@ -38,13 +38,7 @@ const codingFunction1 = (s) =>{
       let newcolor = item.slice(1,item.length-1)
       auxarr2.push(newcolor)
     })
-    return auxarr2
-}
-
-console.log(codingFunction1('red2 blue5 black4 green1 gold3'));
-
-const codingFunction2 = () =>{
-    return ''
+    return auxarr2.join(' ')
 }
 
 

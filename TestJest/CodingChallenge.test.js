@@ -20,12 +20,12 @@ describe('Problem test #1 from Turing - Scores',()=>{
 
 describe('Problem #1 from Turing - Colors',()=>{
     test('The result should be green red gold black blue',()=>{
-        const expected = ['green','red','gold','black', 'blue']
+        const expected = 'green red gold black blue'
         const result = codingFunction1('red2 blue5 black4 green1 gold3')
         expect(expected).toEqual(result)
     })
     test('The result should be black white red green',()=>{
-        const expected = ['black','white','red','green']
+        const expected = 'black white red green'
         const result = codingFunction1('white2 green4 red3 black1')
         expect(expected).toEqual(result)
     })
