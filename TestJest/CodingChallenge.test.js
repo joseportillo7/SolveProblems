@@ -30,3 +30,16 @@ describe('Problem #1 from Turing - Colors',()=>{
         expect(expected).toEqual(result)
     })
 })
+
+describe('Problem #2 from Turing - Number',()=>{
+    test('The result should be [3,5]',()=>{
+        const expected = [3,5]
+        const result = codingFunction2([1,2,3,4,3])
+        expect(expected).toEqual(result)
+    })
+    test('The result should be [2,3]',()=>{
+        const expected = [2,3]
+        const result = codingFunction2([1,2,2])
+        expect(expected).toEqual(result)
+    })
+})

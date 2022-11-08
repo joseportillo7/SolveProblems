@@ -41,6 +41,35 @@ const codingFunction1 = (s) =>{
     return auxarr2.join(' ')
 }
 
+const codingFunction2 = (nums) => {
+    
+    let auxarr = []
+    let auxarr2 = []
+    let cont = 1
+    let flag = false
+    nums.map(item => {
+        if(auxarr.length > 0){
+            auxarr.forEach(it => {
+                cont++
+                if(it === item){
+                    auxarr2.push(item)
+                    flag = true
+                }
+            })
+            if(flag){
+                auxarr2.push(cont)
+                auxarr = []
+                cont=0
+            }else{
+                auxarr.push(item)
+                cont = 1
+            }
+        }else{
+            auxarr.push(item)
+        }
+    })
+    return auxarr2
+}
 
 module.exports = {
     codingFunctiontest,
