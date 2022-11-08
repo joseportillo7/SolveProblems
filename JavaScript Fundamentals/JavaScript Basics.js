@@ -282,7 +282,6 @@ const MyFunction24 = (str) =>{
     return str.indexOf('is')
 }
 
-
 module.exports.jsBasics = {
     MyFunction1,
     MyFunction2,
