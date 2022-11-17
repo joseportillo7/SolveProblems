@@ -134,6 +134,3 @@ class ListNode {
 // console.log('Implementing double list');
 // lista.print()
 // lista.printreverse()
-
-
-module.exports = LinkedList

@@ -12,7 +12,54 @@
  * Implementing a LinkedList from file ImplementingList.js
  */
 
-const lista = require('./ImplementingList')
+ const createNode = (value) =>{
+    return{
+        value: value,
+        next: null,
+    }
+}
+
+class LinkedList{
+    constructor(){
+        this.head = null,
+        this.tail = null,
+        this.length = 0
+    }
+
+    insert(value){
+        this.length++
+        let newNode = createNode(value)
+        if(this.tail){
+            this.tail.next = newNode
+            this.tail = newNode
+            return newNode
+        }
+        this.head = this.tail = newNode
+        return newNode
+    }
+
+    insertfirst(value){
+        let nuevo = createNode(value)
+        if(this.tail){
+            nuevo.next = this.head
+            this.head = nuevo
+            return nuevo
+        }
+        this.head = this.tail = nuevo
+        return nuevo
+    }
+
+    print(){
+        let current = this.head
+        let concat = ''
+        while(current){
+            concat += '['+current.value+']->'
+            current = current.next
+        }
+        console.log(concat+this.tail.next);
+    }
+}
+
 
 
 const functionAddTwoNumbers = (l1,l2) =>{
@@ -20,7 +67,7 @@ const functionAddTwoNumbers = (l1,l2) =>{
     let sum = 0
     let current = createNode(0)
     let result = current
-    
+
     while(l1.head || l2.head){
         if(l1.head){
             sum += l1.head.value
@@ -45,28 +92,23 @@ const functionAddTwoNumbers = (l1,l2) =>{
     return result.next
 }
 
-//let list1 = new LinkedList()
-let list1 = new lista()
+let list1 = new LinkedList()
 list1.insert(2)
 list1.insert(4)
 list1.insert(3)
 
-//let list2 = new LinkedList()
-let list2 = new lista()
+let list2 = new LinkedList()
 list2.insert(5)
 list2.insert(6)
 list2.insert(4)
 
 
-//let list3 = new LinkedList()
-let list3 = new lista()
+let list3 = new LinkedList()
 list3.insert(0)
-//let list4 = new LinkedList()
-let list4 = new lista()
+let list4 = new LinkedList()
 list4.insert(0)
 
-//let list5 = new LinkedList()
-let list5 = new lista()
+let list5 = new LinkedList()
 list5.insert(9)
 list5.insert(9)
 list5.insert(9)
@@ -74,8 +116,8 @@ list5.insert(9)
 list5.insert(9)
 list5.insert(9)
 list5.insert(9)
-//let list6 = new LinkedList()
-let list6 = new lista()
+
+let list6 = new LinkedList()
 list6.insert(9)
 list6.insert(9)
 list6.insert(9)
